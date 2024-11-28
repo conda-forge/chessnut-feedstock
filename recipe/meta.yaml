@@ -1,14 +1,14 @@
 {% set python_min = "3.9" %}
 {% set name = "chessnut" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Chessnut-{{ version }}.tar.gz
-  sha256: 817d5c8ae904e81bb9596658ea28bd38c367e85b13cfe740e15d0c9649d2c400
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 033fd120eca1b0ebb0b48236df95d3e30e791cf52c4c7cd7f29a71b6a0dd7c85
 
 build:
   noarch: python
